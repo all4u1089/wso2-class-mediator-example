@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sequence name="edocSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
-    <property expression="$url:docId" name="docId" scope="default" type="STRING"/>
+    <property expression="$trp:docId" name="docId" scope="default" type="STRING"/>
     <property expression="$trp:systemId" name="systemId" scope="default" type="STRING"/>
     <property expression="$trp:secret" name="secret" scope="default" type="STRING"/>
     <class name="com.quangnam.example.EdocMediator"/>
