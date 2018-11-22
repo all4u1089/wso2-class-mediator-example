@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="agenciesListSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <class name="com.quangnam.example.AgenciesListMediator"/>
+    <property expression="json-eval($.)" name="JSON-Payload" scope="default" type="STRING"/>
+    <payloadFactory media-type="json">
+        <format>$1</format>
+        <args>
+            <arg evaluator="xml" expression="get-property('JSON-Payload')"/>
+        </args>
+    </payloadFactory>
+    <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+    <respond/>
+</sequence>

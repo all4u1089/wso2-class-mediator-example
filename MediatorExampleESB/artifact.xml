@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="callClassMediatorSeq" groupId="com.example.MediatorExampleESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/callClassMediatorSeq.xml</file>
+    </artifact>
+    <artifact name="callUppercaseMediator" groupId="com.example.MediatorExampleESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/callUppercaseMediator.xml</file>
+    </artifact>
+    <artifact name="agenciesListSeq" groupId="com.example.MediatorExampleESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/agenciesListSeq.xml</file>
+    </artifact>
+    <artifact name="callAgenciesListMediator" groupId="com.example.MediatorExampleESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/callAgenciesListMediator.xml</file>
+    </artifact>
+    <artifact name="receivedEdocListSeq" groupId="com.example.MediatorExampleESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/receivedEdocListSeq.xml</file>
+    </artifact>
+    <artifact name="callReceivedEdocListMediator" groupId="com.example.MediatorExampleESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/callReceivedEdocListMediator.xml</file>
+    </artifact>
+    <artifact name="edocSeq" groupId="com.example.MediatorExampleESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/edocSeq.xml</file>
+    </artifact>
+    <artifact name="callEdocMediator" groupId="com.example.MediatorExampleESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/callEdocMediator.xml</file>
+    </artifact>
+    <artifact name="sendEdocSeq" groupId="com.example.MediatorExampleESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/sendEdocSeq.xml</file>
+    </artifact>
+    <artifact name="callSendEdoc2Mediator" groupId="com.example.MediatorExampleESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/callSendEdoc2Mediator.xml</file>
+    </artifact>
+</artifacts>

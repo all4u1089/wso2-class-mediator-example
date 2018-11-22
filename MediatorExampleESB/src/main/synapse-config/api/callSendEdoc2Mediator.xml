@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/sendEdoc2" name="callSendEdoc2Mediator" xmlns="http://ws.apache.org/ns/synapse">
+    <resource inSequence="sendEdocSeq" methods="POST PUT GET">
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/agenciesList" name="callAgenciesListMediator" xmlns="http://ws.apache.org/ns/synapse">
+    <resource inSequence="agenciesListSeq" methods="GET">
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

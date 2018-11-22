@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="callClassMediatorSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="json-eval($.city)" name="CITY" scope="default" type="STRING"/>
+    <class name="com.quangnam.example.UppercaseConvertMediator">
+        <property name="name" value="Pham Xuan Thanh"/>
+    </class>
+    <property expression="$ctx:CONVERTED" name="result" scope="default" type="STRING"/>
+    <log>
+        <property expression="get-property('result')" name="============="/>
+    </log>
+    <payloadFactory media-type="json">
+        <format>{
+		  "result":"$1"
+		}</format>
+        <args>
+            <arg evaluator="xml" expression="get-property('result')"/>
+        </args>
+    </payloadFactory>
+    <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+    <respond/>
+</sequence>

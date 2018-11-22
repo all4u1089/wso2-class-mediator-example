@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry exported="true" kind="var" path="ECLIPSE_WORKSPACE/.metadata/.plugins/org.wso2.developerstudio.eclipse.esb.libraries/lib/axis2_1.6.1.wso2v20.jar"/>
+	<classpathentry exported="true" kind="var" path="ECLIPSE_WORKSPACE/.metadata/.plugins/org.wso2.developerstudio.eclipse.esb.libraries/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="var" path="ECLIPSE_WORKSPACE/.metadata/.plugins/org.wso2.developerstudio.eclipse.esb.libraries/lib/synapse-core_2.1.7.wso2v80.jar"/>
+	<classpathentry kind="lib" path="lib/JAVA_SDK_VXP-2.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/synapse-commons-2.1.7-wso2v81.jar"/>
+	<classpathentry kind="lib" path="lib/axiom-api-1.2.21.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="lib/json-20180813.jar"/>
+	<classpathentry kind="lib" path="lib/httpcore-4.4.10.jar"/>
+	<classpathentry kind="output" path="target"/>
+</classpath>

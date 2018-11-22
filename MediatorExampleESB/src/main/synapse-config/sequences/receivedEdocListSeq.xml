@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="receivedEdocListSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="$url:messageType" name="messageType" scope="default" type="STRING"/>
+    <property expression="$trp:systemId" name="systemId" scope="default" type="STRING"/>
+    <property expression="$trp:secret" name="secret" scope="default" type="STRING"/>
+    <class name="com.quangnam.example.ReceivedEdocListMediator"/>
+    <property expression="json-eval($.)" name="JSON-Payload" scope="default" type="STRING"/>
+    <payloadFactory media-type="json">
+        <format>$1</format>
+        <args>
+            <arg evaluator="xml" expression="get-property('JSON-Payload')"/>
+        </args>
+    </payloadFactory>
+    <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+    <respond/>
+</sequence>
