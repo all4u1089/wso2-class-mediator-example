@@ -29,4 +29,10 @@
     <artifact name="callSendEdoc2Mediator" groupId="com.example.MediatorExampleESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/api/callSendEdoc2Mediator.xml</file>
     </artifact>
+    <artifact name="sendEdocListSeq" groupId="com.example.MediatorExampleESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/sendEdocListSeq.xml</file>
+    </artifact>
+    <artifact name="callSendEdocListMediator" groupId="com.example.MediatorExampleESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/callSendEdocListMediator.xml</file>
+    </artifact>
 </artifacts>

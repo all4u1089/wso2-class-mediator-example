@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sequence name="sendEdocSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+<sequence name="sendEdocListSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
     <property expression="$trp:messageType" name="messageType" scope="default" type="STRING"/>
     <property expression="$trp:systemId" name="systemId" scope="default" type="STRING"/>
     <property expression="$trp:secret" name="secret" scope="default" type="STRING"/>
-    <property expression="$trp:from" name="from" scope="default" type="STRING"/>
-    <property expression="//xformValues//base64data/text()" name="uri.var.base64data" scope="default" type="STRING"/>
-    <class name="com.quangnam.example.SendEdocMediator"/>
+    <property expression="$trp:docId" name="docId" scope="default" type="STRING"/>
+    <class name="com.quangnam.example.SendEdocListMediator"/>
     <property expression="json-eval($.)" name="JSON-Payload" scope="default" type="STRING"/>
     <payloadFactory media-type="json">
         <format>$1</format>
