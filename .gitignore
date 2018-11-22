@@ -5,6 +5,14 @@ target
 /src-gen/
 /ClassMediatorExample/.classpath
 /ClassMediatorExample/target
+/ClassMediatorExample/target/
+ClassMediatorExample/.classpath
+ClassMediatorExample/target
+ClassMediatorExample/target/
+/MediatorExample-Dist/target
+/MediatorExample-Dist/target/
+MediatorExample-Dist/target
+MediatorExample-Dist/target/
 .factorypath
 .settings/org.eclipse.wst.common.component
 .settings/org.eclipse.wst.common.project.facet.core.xml
