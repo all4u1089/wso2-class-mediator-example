@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/updateStatus" name="callUpdateStatusMediator" xmlns="http://ws.apache.org/ns/synapse">
+    <resource inSequence="updateStatusSeq" methods="POST PUT GET">
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

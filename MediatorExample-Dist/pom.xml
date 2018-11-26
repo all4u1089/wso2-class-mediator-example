@@ -20,9 +20,11 @@
     <com.example.MediatorExampleESB.sequence_._sendEdocListSeq>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.sequence_._sendEdocListSeq>
     <com.quangnam.example.ClassMediatorExample_._ClassMediatorExample>capp/EnterpriseServiceBus</com.quangnam.example.ClassMediatorExample_._ClassMediatorExample>
     <com.example.MediatorExampleESB.api_._callUppercaseMediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callUppercaseMediator>
+    <com.example.MediatorExampleESB.sequence_._updateStatusSeq>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.sequence_._updateStatusSeq>
     <com.example.MediatorExampleESB.sequence_._callClassMediatorSeq>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.sequence_._callClassMediatorSeq>
     <com.example.MediatorExampleESB.api_._callEdocMediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callEdocMediator>
     <com.example.MediatorExampleESB.api_._callSendEdoc2Mediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callSendEdoc2Mediator>
+    <com.example.MediatorExampleESB.api_._callUpdateStatusMediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callUpdateStatusMediator>
     <com.example.MediatorExampleESB.sequence_._sendEdocSeq>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.sequence_._sendEdocSeq>
     <com.example.MediatorExampleESB.api_._callSendEdocMediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callSendEdocMediator>
     <com.example.MediatorExampleESB.api_._callSendEdocListMediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callSendEdocListMediator>
@@ -111,6 +113,18 @@
     <dependency>
       <groupId>com.example.MediatorExampleESB.sequence</groupId>
       <artifactId>sendEdocListSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.MediatorExampleESB.api</groupId>
+      <artifactId>callUpdateStatusMediator</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.MediatorExampleESB.sequence</groupId>
+      <artifactId>updateStatusSeq</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
