@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="deleteAgencySeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="$trp:agencyCode" name="agencyCode" scope="default" type="STRING"/>
+    <class name="com.quangnam.example.DeleteAgencyMediator"/>
+    <property expression="json-eval($.)" name="JSON-Payload" scope="default" type="STRING"/>
+    <payloadFactory media-type="json">
+        <format>$1</format>
+        <args>
+            <arg evaluator="xml" expression="get-property('JSON-Payload')"/>
+        </args>
+    </payloadFactory>
+    <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+    <respond/>
+</sequence>

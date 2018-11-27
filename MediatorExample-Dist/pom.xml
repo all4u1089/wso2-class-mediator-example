@@ -15,10 +15,12 @@
   <description>MediatorExample-Dist</description>
   <properties>
     <com.example.MediatorExampleESB.sequence_._registerAgencySeq>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.sequence_._registerAgencySeq>
+    <com.example.MediatorExampleESB.api_._callDeleteAgencyMediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callDeleteAgencyMediator>
     <com.example.MediatorExampleESB.sequence_._updateStatusSeq>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.sequence_._updateStatusSeq>
     <com.example.MediatorExampleESB.api_._callEdocMediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callEdocMediator>
     <com.example.MediatorExampleESB.api_._callUppercaseMediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callUppercaseMediator>
     <com.example.MediatorExampleESB.sequence_._callClassMediatorSeq>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.sequence_._callClassMediatorSeq>
+    <com.example.MediatorExampleESB.sequence_._deleteAgencySeq>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.sequence_._deleteAgencySeq>
     <com.example.MediatorExampleESB.api_._callUpdateStatusMediator>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.api_._callUpdateStatusMediator>
     <com.example.MediatorExampleESB.sequence_._agenciesListSeq>capp/EnterpriseServiceBus</com.example.MediatorExampleESB.sequence_._agenciesListSeq>
     <com.quangnam.example.ClassMediatorExample_._ClassMediatorExample>capp/EnterpriseServiceBus</com.quangnam.example.ClassMediatorExample_._ClassMediatorExample>
@@ -139,6 +141,18 @@
     <dependency>
       <groupId>com.example.MediatorExampleESB.sequence</groupId>
       <artifactId>registerAgencySeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.MediatorExampleESB.api</groupId>
+      <artifactId>callDeleteAgencyMediator</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.MediatorExampleESB.sequence</groupId>
+      <artifactId>deleteAgencySeq</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

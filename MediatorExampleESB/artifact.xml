@@ -47,4 +47,10 @@
     <artifact name="callRegisterAgencyMediator" groupId="com.example.MediatorExampleESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/api/callRegisterAgencyMediator.xml</file>
     </artifact>
+    <artifact name="deleteAgencySeq" groupId="com.example.MediatorExampleESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/deleteAgencySeq.xml</file>
+    </artifact>
+    <artifact name="callDeleteAgencyMediator" groupId="com.example.MediatorExampleESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/callDeleteAgencyMediator.xml</file>
+    </artifact>
 </artifacts>
