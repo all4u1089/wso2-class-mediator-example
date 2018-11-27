@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sequence name="registerAgencySeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
-    <property expression="json-eval($.id)" name="id" scope="default" type="STRING"/>
-    <property expression="json-eval($.pid)" name="pid" scope="default" type="STRING"/>
-    <property expression="json-eval($.code)" name="code" scope="default" type="STRING"/>
-    <property expression="json-eval($.name)" name="name" scope="default" type="STRING"/>
-    <property expression="json-eval($.mail)" name="mail" scope="default" type="STRING"/>
-    <property expression="json-eval($.mobile)" name="mobile" scope="default" type="STRING"/>
-    <property expression="json-eval($.fax)" name="fax" scope="default" type="STRING"/>
+    <property expression="json-eval($.data.id)" name="id" scope="default" type="STRING"/>
+    <property expression="json-eval($.data.pid)" name="pid" scope="default" type="STRING"/>
+    <property expression="json-eval($.data.code)" name="code" scope="default" type="STRING"/>
+    <property expression="json-eval($.data.name)" name="name" scope="default" type="STRING"/>
+    <property expression="json-eval($.data.mail)" name="mail" scope="default" type="STRING"/>
+    <property expression="json-eval($.data.mobile)" name="mobile" scope="default" type="STRING"/>
+    <property expression="json-eval($.data.fax)" name="fax" scope="default" type="STRING"/>
     <class name="com.quangnam.example.RegisterAgencyMediator"/>
     <property expression="json-eval($.)" name="JSON-Payload" scope="default" type="STRING"/>
     <payloadFactory media-type="json">

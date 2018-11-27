@@ -40,7 +40,7 @@ public class RegisterAgencyMediator extends AbstractMediator {
 		//Tạo json payload
 	    String jsonPayloadToString = JsonUtil.jsonPayloadToString(((Axis2MessageContext) context).getAxis2MessageContext());
 	    JSONObject jsonBody = new JSONObject(jsonPayloadToString);
-
+	    jsonBody.remove("data");
 	    jsonBody.put("status", registerAgencyResult.getStatus());
 	    jsonBody.put("errorCode", registerAgencyResult.getErrorCode());
 	    jsonBody.put("errorDesc", registerAgencyResult.getErrorDesc());
